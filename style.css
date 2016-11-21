@@ -10,6 +10,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ensureye
 */
 
+.blue {
+  background-color: #a2cbeb;
+}
 
 @media screen and (min-width: 20em) { /* 320px */
 
@@ -20,13 +23,12 @@ Text Domain: ensureye
     height: 250px;
   }
 
-  .custom-header-image:before {
+  .custom-header-image:before:: {
     height: 33%;
     background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%);
     background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.2) 100%);
-    }
-
+  }
 }
 
 @media screen and (min-width: 30em) { /* 480px */
@@ -37,7 +39,6 @@ Text Domain: ensureye
   .admin-bar.home.blog.has-header-image .custom-header-image {
     height: 375px;
   }
-
 }
 
 @media screen and (min-width: 48em) { /* 768px */
@@ -48,17 +49,13 @@ Text Domain: ensureye
   .admin-bar.home.blog.has-header-image .custom-header-image {
     height: 500px;
   }
-
 }
 
-@media screen and ( min-width: 67em ) { /* 1072px */
-
+@media screen and (min-width: 67em) { /* 1072px */
 }
 
-@media screen and ( min-width: 79em ) { /* 1264px */
-
+@media screen and (min-width: 79em) { /* 1264px */
 }
 
-@media screen and ( max-width: 48.875em ) and ( min-width: 48em ) { /* 768 - 782px */
-
+@media screen and (max-width: 48.875em) and (min-width: 48em) { /* 768 - 782px */
 }
