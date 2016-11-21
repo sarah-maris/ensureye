@@ -32,9 +32,16 @@ global $twentyseventeencounter;
   <?php endif; ?>
 
   <?php // *** ENSUREYE CHANGE: add custom color class to panel   ***
-	  $eeye_color_class =  get_post_custom_values('panelColor')[0]; ?>
+    $terms =  get_the_terms(  $post, 'page_classes' );
+    $page_classes = '';
+		if ($terms){
+	    foreach ( $terms as $term) {
+	      $page_classes = $page_classes.' '.$term->name;
+	    }
+		}
+?>
 
-  <div class="panel-content <?php echo $eeye_color_class; ?>">
+  <div class="panel-content<?php echo $page_classes; ?>">
     <div class="wrap">
       <header class="entry-header">
         <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>

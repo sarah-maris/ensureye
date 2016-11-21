@@ -50,6 +50,11 @@ Updated: 11-21-16
   .admin-bar.home.blog.has-header-image .custom-header-image {
     height: 500px;
   }
+
+  /* set panel with to header width */
+  .home .panel-content .wrap {
+    max-width: 1000px;
+  }
 }
 
 @media screen and (min-width: 67em) { /* 1072px */
